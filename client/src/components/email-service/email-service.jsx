@@ -2,6 +2,9 @@ import React from 'react';
 import './email-service.scss';
 import { useState } from 'react';
 import axios from 'axios';
+import 'antd/dist/antd.css';
+import { Input, Button } from 'antd';
+
 
 const EMAIL = () => {
     const [text, setText] = useState(' ');
@@ -29,28 +32,31 @@ const EMAIL = () => {
     }
 
     return (
-        <div className='email'>
-            <h1>EMAIL SERVICE</h1>
-            <div className='sms-service'>
+        <div className='EmailContainer'>
+ 
+            <div className='emailService'>
+                <h1>EMAIL SERVICE</h1>
                 <form>
-                    <label className='nmb'>Email Subject</label>
-                    <input type='text' className='number' onChange={e => setEmailSubject(e.target.value)}></input>
-                    <label className='nmb'>Email Text</label>
-                    <input type='text' className='text' onChange={e => setText(e.target.value)}></input>
-                    <label className='nmb'>Address</label>
-                    <input type='text' className='number' onChange={e => setEmailRef(e.target.value)}></input>
+                    <label>Email Subject</label>
+                    <Input placeholder='Subject' type='text' onChange={e => setEmailSubject(e.target.value)}></Input>
+                    <label>Email Text</label>
+                    <Input placeholder='Message' type='text' onChange={e => setText(e.target.value)}></Input>
+                    <label>Address</label>
+                    <Input placeholder='Email' type='text' onChange={e => setEmailRef(e.target.value)}></Input>
                 </form>
-                <button className='btn' onClick={sendEmailSms}>SEND</button>
+                <Button type="primary" onClick={sendEmailSms}>SEND</Button>
             </div>
             <div className='template'>
                 <h1>SEND YOUR TEMPLATE</h1>
-                <label>Email address</label>
-                <input type='text' onChange={e => setEmailAdress(e.target.value)}></input>
-                <label>Template Data Key</label>
-                <input type='text' onChange={e => setDataKey(e.target.value)}></input>
-                <label>Template Data Value</label>
-                <input type='text' onChange={e => setEmailData(e.target.value)}></input>
-                <button onClick={sendTemplate}>Send Template</button>
+                <form>
+                    <label>Email address</label>
+                    <Input placeholder='Email' type='text' onChange={e => setEmailAdress(e.target.value)}></Input>
+                    <label>Template Data Key</label>
+                    <Input placeholder='Data Key' type='text' onChange={e => setDataKey(e.target.value)}></Input>
+                    <label>Template Data Value</label>
+                    <Input placeholder='Data Value' type='text' onChange={e => setEmailData(e.target.value)}></Input>
+                    <Button type="primary" onClick={sendTemplate}>Send Template</Button>
+                </form>
             </div>
         </div>)
 }

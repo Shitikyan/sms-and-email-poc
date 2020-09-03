@@ -1,69 +1,76 @@
-.btn {
-    width: 60px;
-    height: 60px;
-    cursor: pointer;
-    margin-left: 30px;
-    border: white;
-
-    &:hover {
-        background-color: rgb(9, 255, 0);
-        border: white;
-    }
-}
-
-.text {
-    width: 150px;
-    height: 30px;
-}
-
-.sms-service {
+.EmailContainer {
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    .emailService {
+        width: 450px;
+        margin: 20px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #200303;
+        color: white;
 
-.number {
-    width: 150px;
-    height: 30px;
-}
+        h1 {
+            margin: 20px 0 0;
+            color: white;
+        }
 
-.nmb {
-    margin-left: 30px;
-}
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
 
-.template {
-    width: 200px;
-    margin: 100px auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+            Input {
+                text-align: center;
+                border-radius: 5px;
+                background-color: #200303;
+                color: white;
+            }
 
-    button {
-        width: 60px;
-        height: 60px;
-        cursor: pointer;
-        margin-top: 20px;
-        border: white;
-        padding: 0;
-        ;
+            label {
+                font-size: 1.5em;
+                margin-top: 15px;
+            }
+        }
 
-        &:hover {
-            background-color: rgb(9, 255, 0);
-            border: white;
+        Button {
+            margin: 20px 0;
         }
     }
 
-    input {
-        margin-top: 10px;
-        height: 30px;
-    }
-}
+    .template {
+        width: 450px;
+        margin: 20px 0 20px 165px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #200303;
+        color: white;
 
-.email {
-    margin-top: 100px;
+        h1 {
+            margin: 20px 0 0;
+            color: white;
+        }
 
-    h1 {
-        text-align: center;
-        margin-bottom: 50px;
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            Input {
+                text-align: center;
+                border-radius: 5px;
+                background-color: #200303;
+                color: white;
+            }
+
+            label {
+                font-size: 1.5em;
+                margin-top: 15px;
+            }
+        }
+
+        Button {
+            margin: 20px 0;
+        }
     }
 }

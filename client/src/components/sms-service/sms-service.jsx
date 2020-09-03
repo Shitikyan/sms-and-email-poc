@@ -1,7 +1,9 @@
 import React from 'react';
 import './sms-service.scss'
 import { useState } from 'react';
-import axios from 'axios'
+import axios from 'axios';
+import 'antd/dist/antd.css';
+import { Input, Button } from 'antd';
 
 const SMS = () => {
     const [smsBody, setSmsBody] = useState(' ');
@@ -15,17 +17,15 @@ const SMS = () => {
     }
 
     return (
-        <div className='sms'>
+        <div className='smsService'>
             <h1>SMS SERVICE</h1>
-            <div className='sms-service'>
-                <form>
-                    <label>Sms</label>
-                    <input type='text' className='text' onChange={e => setSmsBody(e.target.value)}></input>
-                    <label className='nmb'>Number</label>
-                    <input type='text' className='number' onChange={e => setNumber(e.target.value)}></input>
-                </form>
-                <button className='btn' onClick={sendSMS}>SEND</button>
-            </div>
+            <form>
+                <label>SMS</label>
+                <Input  placeholder='Message' type='text' onChange={e => setSmsBody(e.target.value)}></Input>
+                <label>Number</label>
+                <Input  placeholder='Number' type='text' onChange={e => setNumber(e.target.value)}></Input>
+            </form>
+            <Button type="primary" onClick={sendSMS}>SEND</Button>
         </div>)
 }
 

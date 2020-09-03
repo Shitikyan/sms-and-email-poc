@@ -118,3 +118,5 @@ Once you finish signup in SendGrid we will need some credentials.
 10. Navigate to Email API, Dynamic Templates and Create a Dynamic Template.
 11. Write your Dynamic Template Name and create it.
 12. Copy your Template ID and enter it in the .env file as the TEMPLATE_ID.
+
+You can copy content of .sample file in your template code or create your own. If you copied that content, it have a dynamic Template data imageURL.

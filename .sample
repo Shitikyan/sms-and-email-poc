@@ -1,0 +1,10 @@
+  <html>
+    <head>
+      <title></title>
+    </head>
+    <body>
+        <h1 style="color: red">Welcome!</h1>  
+        <p style="color: blue">This is Email Service</p>
+        <img src="{{imageURL}}" alt="image">
+    </body>
+  </html>
