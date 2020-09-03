@@ -1,0 +1,20 @@
+{
+  "name": "express-react",
+  "version": "1.0.0",
+  "description": "sms service ",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js"
+  },
+  "author": "Hayk Karyan",
+  "license": "ISC",
+  "dependencies": {
+    "@sendgrid/mail": "^7.2.4",
+    "body-parser": "^1.19.0",
+    "concurrently": "^5.3.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "twilio": "^3.49.0"
+  }
+}

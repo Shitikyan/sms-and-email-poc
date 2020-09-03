@@ -1,0 +1,53 @@
+.btn {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    margin-left: 30px;
+    border: white;
+
+    &:hover {
+        background-color: rgb(9, 255, 0);
+        border: white;
+    }
+}
+
+input {
+    width: 150px;
+    height: 30px;
+    border: 2px solid #3498db;
+    background: none;
+    display: block;
+    margin: 20px 0;
+    text-align: center;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+}
+
+.sms-service {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.number {
+    width: 150px;
+    height: 30px;
+}
+
+.nmb {
+    margin-left: 30px;
+}
+
+.sms {
+    margin: 30px auto;
+    width: 300px;
+    padding: 40px;
+    background: #191919;
+
+    h1 {
+        text-align: center;
+        color: white;
+        font-weight: 500;        
+    }
+}
